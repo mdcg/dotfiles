@@ -23,6 +23,11 @@ $ cd dotfiles/ubuntu/scripts/
 $ ./install.sh
 ```
 
+## References
+
+* [https://github.com/webpro/awesome-dotfiles](https://github.com/webpro/awesome-dotfiles)
+* [https://www.freecodecamp.org/news/how-to-set-up-a-fresh-ubuntu-desktop-using-only-dotfiles-and-bash-scripts/](https://www.freecodecamp.org/news/how-to-set-up-a-fresh-ubuntu-desktop-using-only-dotfiles-and-bash-scripts/)
+
 ## Contributing
 
 Feel free to do whatever you want with this project. :-)
