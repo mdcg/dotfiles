@@ -1,8 +1,21 @@
-alias update="sudo apt-get update -y; sudo apt-get upgrade -y; sudo apt autoremove -y"
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~"
 alias -- -="cd -"
+
+alias ls='ls --color=auto'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
 alias restart="shutdown now -r"
+alias update="sudo apt-get update -y; sudo apt-get upgrade -y; sudo apt autoremove -y"
