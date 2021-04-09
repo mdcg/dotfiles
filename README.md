@@ -27,6 +27,7 @@ $ ./install.sh
 
 * [https://github.com/webpro/awesome-dotfiles](https://github.com/webpro/awesome-dotfiles)
 * [https://www.freecodecamp.org/news/how-to-set-up-a-fresh-ubuntu-desktop-using-only-dotfiles-and-bash-scripts/](https://www.freecodecamp.org/news/how-to-set-up-a-fresh-ubuntu-desktop-using-only-dotfiles-and-bash-scripts/)
+* [http://bashrcgenerator.com/](http://bashrcgenerator.com/)
 
 ## Contributing
 
