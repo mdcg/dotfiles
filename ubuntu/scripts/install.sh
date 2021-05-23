@@ -27,6 +27,7 @@ install curl
 install llvm
 install libncurses5-dev
 install git
+install tmux
 
 sudo apt upgrade -y
 sudo apt autoremove -y
