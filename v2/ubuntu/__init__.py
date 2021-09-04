@@ -8,7 +8,10 @@ init(autoreset=True)
 def exec_command(command, label=None):
     if label:
         print(label)
-    system(command)
+    try:
+        system(command)
+    except Exception as e:
+        print(e)
 
 
 def exec_update():
