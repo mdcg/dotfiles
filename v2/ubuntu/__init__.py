@@ -40,3 +40,11 @@ def exec_autoremove():
         command="sudo apt autoremove -y",
         label=f"♻️ {Fore.RED}{Style.BRIGHT} Removing unnecessary libraries...",
     )
+
+
+def install_packages(dependencies):
+    for util in dependencies:
+        exec_command(
+            command=f"sudo apt-get install {util} -y",
+            label=f"🪄 {Fore.GREEN}{Style.BRIGHT} Installing {util}...",
+        )
