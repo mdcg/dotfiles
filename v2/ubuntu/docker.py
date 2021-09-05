@@ -1,4 +1,10 @@
-from v2.ubuntu import exec_autoremove, exec_update, exec_upgrade, exec_command
+from v2.ubuntu import (
+    exec_autoremove,
+    exec_update,
+    exec_upgrade,
+    exec_command,
+    install_packages,
+)
 from colorama import Fore, Style
 
 DOCKER_LIBRARIES_TO_UNINSTALL = (
@@ -40,11 +46,7 @@ def install_docker():
     exec_autoremove()
     exec_update()
 
-    for dep in DOCKER_DEPENDENCIES:
-        exec_command(
-            command=f"sudo apt-get install {dep} -y",
-            label=f"🪄 {Fore.GREEN}{Style.BRIGHT} Installing {dep}...",
-        )
+    install_packages(DOCKER_DEPENDENCIES)
 
     exec_command(
         "curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg"
@@ -55,11 +57,7 @@ def install_docker():
 
     exec_update()
 
-    for lib in DOCKER_INSTALL_LIBRARIES:
-        exec_command(
-            command=f"sudo apt-get install {lib} -y",
-            label=f"🪄 {Fore.GREEN}{Style.BRIGHT} Installing {lib}...",
-        )
+    install_packages(DOCKER_INSTALL_LIBRARIES)
 
     exec_update()
     exec_upgrade()

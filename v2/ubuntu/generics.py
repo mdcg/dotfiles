@@ -3,11 +3,12 @@ from v2.ubuntu import (
     exec_autoremove,
     exec_update,
     exec_full_upgrade,
+    install_packages,
 )
 from colorama import Fore, Style
 
 
-GENERICS_UTILS = (
+GENERICS_DEPENDENCIES = (
     "make",
     "build-essential",
     "libssl-dev",
@@ -28,11 +29,7 @@ def install_generic_utils():
     exec_update()
     exec_full_upgrade()
 
-    for util in GENERICS_UTILS:
-        exec_command(
-            command=f"sudo apt-get install {util} -y",
-            label=f"🪄 {Fore.GREEN}{Style.BRIGHT} Installing {util}...",
-        )
+    install_packages(GENERICS_DEPENDENCIES)
 
     exec_update()
     exec_autoremove()
