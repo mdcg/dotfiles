@@ -1,11 +1,9 @@
-from v2.ubuntu import (
-    exec_command,
+from config.ubuntu import (
     exec_autoremove,
     exec_update,
     exec_full_upgrade,
     install_packages,
 )
-from colorama import Fore, Style
 
 
 GENERICS_DEPENDENCIES = (

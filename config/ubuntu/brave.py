@@ -1,4 +1,4 @@
-from v2.ubuntu import exec_update, exec_command, install_packages
+from config.ubuntu import exec_update, exec_command, install_packages
 from colorama import Fore, Style
 
 

@@ -1,4 +1,4 @@
-from v2.ubuntu import (
+from config.ubuntu import (
     exec_autoremove,
     exec_update,
     exec_upgrade,

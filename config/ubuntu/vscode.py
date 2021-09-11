@@ -1,4 +1,4 @@
-from v2.ubuntu import exec_update, exec_command, install_packages
+from config.ubuntu import exec_update, exec_command, install_packages
 from colorama import Fore, Style
 
 VSCODE_DEPENDENCIES = (
@@ -15,9 +15,7 @@ def install_vscode():
         label=f"🛡️ {Fore.GREEN}{Style.BRIGHT} Downloading Microsoft VSCode GPG key...",
     )
 
-    exec_command(
-        "sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/"
-    )
+    exec_command("sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/")
     exec_command(
         "sudo sh -c 'echo \"deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main\" > /etc/apt/sources.list.d/vscode.list'"
     )
