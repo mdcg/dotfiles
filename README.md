@@ -1,33 +1,16 @@
 # dotfiles
 
-These are my `dotfiles`.
+These are my `dotfiles`! :robot: :sparkles: 
 
 ## Usage
 
-First of all, make sure you have git installed on your machine:
+The entire installation was created using `Python`, so it is essential that you have the interpreter installed on your machine if you wish to install these dotfiles.
+
+Installation is all via CLI. All types of installations and steps are defined in it. To run the CLI is very simple, just execute the following command at the root of this project:
 
 ```
-$ sudo apt-get install git
+python -m config.install --help
 ```
-
-After installing git, clone the repository:
-
-```
-$ git clone https://github.com/mdcg/dotfiles.git
-```
-
-To use the installation script, go to the directory of the operating system you want to use (in the example below I am using Ubuntu) and run the installation script:
-
-```
-$ cd dotfiles/ubuntu/scripts/
-$ ./install.sh
-```
-
-## References
-
-* [https://github.com/webpro/awesome-dotfiles](https://github.com/webpro/awesome-dotfiles)
-* [https://www.freecodecamp.org/news/how-to-set-up-a-fresh-ubuntu-desktop-using-only-dotfiles-and-bash-scripts/](https://www.freecodecamp.org/news/how-to-set-up-a-fresh-ubuntu-desktop-using-only-dotfiles-and-bash-scripts/)
-* [http://bashrcgenerator.com/](http://bashrcgenerator.com/)
 
 ## Contributing
 

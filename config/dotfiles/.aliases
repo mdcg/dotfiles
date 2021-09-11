@@ -1,9 +1,11 @@
-alias dir='dir --color=auto'
-alias vdir='vdir --color=auto'
-
+# Text
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+
+# Directories
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
 
 alias ..="cd .."
 alias ...="cd ../.."
@@ -17,5 +19,12 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-alias restart="shutdown now -r"
+# Updates
 alias update="sudo apt-get update -y; sudo apt-get upgrade -y; sudo apt autoremove -y"
+
+# Restart
+alias restart="shutdown now -r"
+
+# Python
+alias venvenv="python -m venv env"
+alias activenv="source env/bin/activate"

@@ -1,5 +1,0 @@
-bar { 
-    position top 
-    status_command i3blocks 
-    tray_output primary 
-}
