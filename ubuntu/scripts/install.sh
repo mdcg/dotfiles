@@ -28,6 +28,7 @@ install llvm
 install libncurses5-dev
 install git
 install tmux
+install blueman
 
 sudo apt upgrade -y
 sudo apt autoremove -y
