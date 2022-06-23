@@ -8,7 +8,12 @@ exec --no-startup-id xsetroot -solid "#000000"
 exec xset s off
 
 # Keyboards
-exec setxkbmap -layout us -variant intl
+# exec setxkbmap -layout us -variant intl
+
+# Tapping
+# Execute "xinput" to get touchpad identifier
+# Execute "xinput list-props "<identifier>"" to get touchpad properties
+exec xinput set-prop "ATML3000:00 03EB:2168 Touchpad" "libinput Tapping Enabled" 1
 
 bar { 
     position top 
