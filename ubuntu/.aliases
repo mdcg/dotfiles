@@ -19,3 +19,6 @@ alias l='ls -CF'
 
 alias restart="shutdown now -r"
 alias update="sudo apt-get update -y; sudo apt-get upgrade -y; sudo apt autoremove -y"
+
+alias venvenv="python -m venv env"
+alias activenv="source env/bin/activate"
