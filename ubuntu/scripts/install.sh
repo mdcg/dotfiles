@@ -29,6 +29,7 @@ install libncurses5-dev
 install git
 install tmux
 install blueman
+install maim
 
 sudo apt upgrade -y
 sudo apt autoremove -y

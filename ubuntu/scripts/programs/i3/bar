@@ -1,19 +1,40 @@
-# My custom settings to i3!
+# *** My custom settings to i3! ***
 
-# Monitor
+# /*** Monitor ***/
+
+# Execute "xrandr --listmonitors" to find out
+# which monitor should we put in the command below
 exec xrandr --output eDP-1 --right-of HDMI-1
 
-# Background
+# /*** Screenshots ***/
+
+# Reference: https://dev.to/dianjuar/i3wm-screenshot-shortcuts-3n7b
+bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
+bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date)"
+bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(date)"
+
+# Clipboard Screenshots
+bindsym Ctrl+Print exec --no-startup-id maim | xclip -selection clipboard -t image/png
+bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
+
+# /*** Background ***/
+
 exec --no-startup-id xsetroot -solid "#000000"
 exec xset s off
 
-# Keyboards
+# /*** Keyboards ***/
+
+# US Layout
 # exec setxkbmap -layout us -variant intl
 
-# Tapping
+# /*** Tapping ***/
+
 # Execute "xinput" to get touchpad identifier
 # Execute "xinput list-props "<identifier>"" to get touchpad properties
 exec xinput set-prop "ATML3000:00 03EB:2168 Touchpad" "libinput Tapping Enabled" 1
+
+# /*** Custom Bar ***/
 
 bar { 
     position top 
