@@ -23,6 +23,10 @@ $ cd dotfiles/ubuntu/scripts/
 $ ./install.sh
 ```
 
+## Prompts
+
+...
+
 ## References
 
 * [https://github.com/webpro/awesome-dotfiles](https://github.com/webpro/awesome-dotfiles)
